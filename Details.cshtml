@@ -1,0 +1,20 @@
+﻿@model DotNetSkillSchool.Models.Tutorial
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<h2>@Model.Title</h2>
+<h4>Category: @Model.Category</h4>
+
+<hr />
+
+<div style="background-color: #f5f5f5; padding: 15px; margin-bottom: 20px;">
+    <h3>Theory</h3>
+    <pre>@Model.Theory</pre>
+</div>
+
+<div style="background-color: #e3f2fd; padding: 15px;">
+    <h3>Practice Code</h3>
+    <pre><code>@Model.Code</code></pre>
+</div>
