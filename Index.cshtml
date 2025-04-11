@@ -1,21 +1,13 @@
-﻿@model List<DotNetSkillSchool.Models.Video>
-
-@{
-    ViewData["Title"] = "Training Videos";
+﻿@{
+    ViewData["Title"] = "Home";
 }
 
-<h2>Training Videos</h2>
-
-@foreach (var video in Model)
-{
-    <div style="margin-bottom: 30px;">
-        <h4>@video.Title</h4>
-        <p>@video.Description</p>
-        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-            <iframe src="@video.YouTubeUrl"
-                    frameborder="0" allowfullscreen
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-            </iframe>
-        </div>
+<div style="background-color: skyblue; padding: 50px 0;">
+    <div class="text-center">
+        <img src="https://content3.jdmagicbox.com/comp/proddatur/x8/9999p8564.8564.240314110719.x1x8/catalogue/brilliant-minds-learning-center-proddatur-bazaar-proddatur-tutorials-i1je090kjd.jpg"
+             alt="Brilliant Minds Logo"
+             style="max-width: 300px; margin-bottom: 20px;" />
+        <h2>Welcome to DotNet Skill School</h2>
+        <p>Learn full stack .NET development from beginner to advanced!</p>
     </div>
-}
+</div>
